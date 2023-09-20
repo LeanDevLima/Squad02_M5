@@ -1,0 +1,219 @@
+{
+  "id": "4de0137c-538c-4f98-b2f4-aa7523cf91c8",
+  "version": "2.0",
+  "name": "Aula1",
+  "url": "https://duckduckgo.com",
+  "tests": [{
+    "id": "198d41a3-24be-4b2a-8a32-ac630932d049",
+    "name": "Teste1",
+    "commands": [{
+      "id": "efe40bee-8eee-4778-9679-080b97825788",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47fb9334-78aa-4f75-9b33-e44f48595370",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a2716c5-106c-464d-b4d8-34a926398d27",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchbox_input",
+      "targets": [
+        ["id=searchbox_input", "id"],
+        ["name=q", "name"],
+        ["css=#searchbox_input", "css:finder"],
+        ["xpath=//input[@id='searchbox_input']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox_homepage']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Instituto Joga Junto"
+    }, {
+      "id": "0e8968ec-a0d2-4301-ab41-93bcc106123c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchbox_searchButton__F5Bwq",
+      "targets": [
+        ["css=.searchbox_searchButton__F5Bwq", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox_homepage']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11fda645-72b4-470e-a957-21f8535accd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.BrPN5UiFwJN5HlfRhga9 .EKtkFWMYpwzMKOYr0GYm",
+      "targets": [
+        ["css=.BrPN5UiFwJN5HlfRhga9 .EKtkFWMYpwzMKOYr0GYm", "css:finder"],
+        ["xpath=//article[@id='r1-0']/div[2]/h2/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/article/div[2]/h2/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Instituto Joga Junto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce376f29-9341-4e3c-a56f-b8a9404b3fc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contato",
+      "targets": [
+        ["linkText=Contato", "linkText"],
+        ["css=.navmenu li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contato')]", "xpath:link"],
+        ["xpath=//div[@id='root']/nav/ul/li/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#Contato')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e871998c-e883-4a2f-a681-b13e2f46b710",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//section[@id='Contato']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65dfa230-c08a-4b55-ade9-61b3d5f988d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//section[@id='Contato']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Leanderson Dias de Lima"
+    }, {
+      "id": "538c4825-a0fd-472a-aefb-3554b6564de1",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//section[@id='Contato']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e37e2590-c044-48ac-bac2-acf7c204a9a2",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//section[@id='Contato']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "leanderson.devlima@gmail.com"
+    }, {
+      "id": "e412ccc4-3935-4bce-b35b-7eafc32d0730",
+      "comment": "",
+      "command": "click",
+      "target": "id=assunto",
+      "targets": [
+        ["id=assunto", "id"],
+        ["name=assunto", "name"],
+        ["css=#assunto", "css:finder"],
+        ["xpath=//select[@id='assunto']", "xpath:attributes"],
+        ["xpath=//section[@id='Contato']/div/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d10ec80b-0f2f-4b31-b577-abe369dc5529",
+      "comment": "",
+      "command": "select",
+      "target": "id=assunto",
+      "targets": [],
+      "value": "label=Ser facilitador"
+    }, {
+      "id": "cf0261b3-c7f8-4069-b1b7-fa3bcf6ef00b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mensagem",
+      "targets": [
+        ["id=mensagem", "id"],
+        ["name=body", "name"],
+        ["css=#mensagem", "css:finder"],
+        ["xpath=//textarea[@id='mensagem']", "xpath:attributes"],
+        ["xpath=//section[@id='Contato']/div/form/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6468c0b6-965c-4df4-bc80-b2ebfc01ab06",
+      "comment": "",
+      "command": "type",
+      "target": "id=mensagem",
+      "targets": [
+        ["id=mensagem", "id"],
+        ["name=body", "name"],
+        ["css=#mensagem", "css:finder"],
+        ["xpath=//textarea[@id='mensagem']", "xpath:attributes"],
+        ["xpath=//section[@id='Contato']/div/form/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Até quero ser facilitador, mas esse é só um teste usando o Selenium IDE."
+    }, {
+      "id": "65d05063-b213-45f6-a8c4-ff8677f53421",
+      "comment": "",
+      "command": "click",
+      "target": "css=button > p",
+      "targets": [
+        ["css=button > p", "css:finder"],
+        ["xpath=//section[@id='Contato']/div/form/button/p", "xpath:idRelative"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32d9fb71-42e2-4e09-94d8-f5293c1a2fc6",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Dados recebidos!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b6cfdf7-5d1c-44ad-b17f-ce41755bc5ef",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "58bf0c06-582f-419d-bafb-230dedbae689",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["198d41a3-24be-4b2a-8a32-ac630932d049"]
+  }],
+  "urls": ["https://duckduckgo.com/"],
+  "plugins": []
+}
