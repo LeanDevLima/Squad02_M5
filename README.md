@@ -34,7 +34,7 @@ Esses são os benefícios que consegui listar durante o tempo de execução dess
 
 A formação dos trios foi determinada de maneira completamente aleatória, e tive a fortuna e o grande privilégio de ser incluído no grupo com a  [Larissa Utermöhl](https://www.linkedin.com/in/larissa-utermohl/) e a [Priscila Portela](https://www.linkedin.com/in/priscilaportelaqa/).
 
-Durante nossa discussão em grupo, identificamos um ponto central de convergência entre os tópicos que listamos: __o otimizado uso do tempo__. Essa otimização abrange diversas áreas, desde a eficiência na execução dos testes até o aproveitamento de códigos e scripts de teste preexistentes, resultando em entregas mais rápidas e eficazes. Em resumo, a automação de testes nos permite maximizar o valor do tempo investido, tornando o processo de desenvolvimento mais eficiente e produtivo
+Durante nossa discussão em grupo, identificamos um ponto central de convergência entre os tópicos que listamos: __o otimizado uso do tempo__. Essa otimização abrange diversas áreas, desde a eficiência na execução dos testes até o aproveitamento de códigos e scripts de teste preexistentes, resultando em entregas mais rápidas e eficazes. Em resumo, a automação de testes nos permite maximizar o valor do tempo investido, tornando o processo de desenvolvimento mais eficiente e produtivo.
 
 </details>
 
@@ -195,5 +195,80 @@ Eu tive certeza que deu certo após receber dois e-mails do Instituto (o primeir
 6. **Identificação de Problemas de Desempenho:** Conhecimentos em frontend podem ajudar a identificar problemas de desempenho, como carregamento lento de páginas ou recursos que consomem muitos recursos do navegador.
 
 Em resumo, os conhecimentos em Frontend são importantes para profissionais de QA porque facilitam a realização de testes de interface de usuário, melhoram a colaboração com desenvolvedores frontend, ajudam na automação de testes e permitem que os testadores acompanhem as mudanças tecnológicas no desenvolvimento de software. Isso resulta em testes mais eficazes e na entrega de software de maior qualidade.
+
+</details>
+</details>
+
+
+
+<details>
+<summary> Preparando o ambiente 🌟</summary>
+<br>
+
+<details>
+<summary>🚀 Descrição da 6ª Atividade: 🌟</summary>
+<br>
+
+🔍 DESAFIO DO CAIQUE Prepare o ambiente para sua primeira automação. Abra o VS code, crie um ambiente virtual e instale a biblioteca do Selenium.
+
+- Essa atividade, graças à ajuda dos facilitadores, teve um resultado rápido e eficiente. Vou demonstrar o que foi aprendido por etapas:
+
+1. **Abrir o Visual Studio Code:**
+   - Abra o Git Bash em seu sistema.
+
+2. **Criar um ambiente virtual:**
+   - Navegue até o diretório onde deseja criar seu ambiente virtual usando o comando `cd`. Por exemplo:
+     ```bash
+     cd C:\Users\Leanderson\...\GitHub\Squad02_M5
+     ```
+   - Crie um ambiente virtual usando o seguinte comando, substituindo "nome_do_seu_ambiente" pelo nome que você deseja dar ao ambiente:
+     ```bash
+     python -m venv pvenv(nome_do_seu_ambiente)
+     ```
+
+3. **Ativar o ambiente virtual:**
+   - No Git Bash, você pode ativar o ambiente virtual usando o seguinte comando:
+     ```bash
+     source pvenv/Scripts/activate
+     ```
+
+4. **Instalar a biblioteca Selenium:**
+   - Com o ambiente virtual ativado, você pode usar o pip para instalar o Selenium. No Git Bash, execute o seguinte comando:
+     ```bash
+     pip install selenium
+     ```
+4. **Evidência da atividade:**
+
+No print abaixo podemos observar que:
+- [x] Foi realizado no  <img src="Atividades/atividade6_1.png" width="150" height="30">; 
+- [x] Ambiente virtual foi criado com o nome "pvenv";
+- [x] Comando 'source' demonstrando que o ambiente virtual já está ativo;
+- [x] Biblioteca do Selenium já instalada, dado o comando __pip show selenium__ para confirmação.
+
+<img src="Atividades\atividade6.png">
+
+</details>
+
+<details>
+<summary>🚀 Descrição da 7ª Atividade: 🌟</summary>
+<br>
+
+🔍 EM SQUADS
+
+Com auxílio do código no repositório do Instituto Joga Junto:
+
+Envie o texto em nosso site.
+Crie um repositório em seu github com o código da automação.
+</details>
+
+
+<details>
+<summary>🚀 Descrição da 8ª Atividade: 🌟</summary>
+<br>
+
+🔍 Faça em casa e apresente na próxima aula. EM SQUAD Escreva uma automação para acessar o Whatsapp web. Envie uma mensagem para o grupo de estudos do IJJ com a mensagem: Automação do WhatsApp - NOME DO SEU SQUAD.
+
+
+
 
 </details>
