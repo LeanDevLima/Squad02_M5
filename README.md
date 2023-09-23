@@ -197,9 +197,8 @@ Eu tive certeza que deu certo após receber dois e-mails do Instituto (o primeir
 Em resumo, os conhecimentos em Frontend são importantes para profissionais de QA porque facilitam a realização de testes de interface de usuário, melhoram a colaboração com desenvolvedores frontend, ajudam na automação de testes e permitem que os testadores acompanhem as mudanças tecnológicas no desenvolvimento de software. Isso resulta em testes mais eficazes e na entrega de software de maior qualidade.
 
 </details>
+
 </details>
-
-
 
 <details>
 <summary> Preparando o ambiente 🌟</summary>
@@ -253,12 +252,72 @@ No print abaixo podemos observar que:
 <summary>🚀 Descrição da 7ª Atividade: 🌟</summary>
 <br>
 
-🔍 EM SQUADS
+🔍 EM SQUADS Com auxílio do código no repositório do Instituto Joga Junto:
+Envie o texto em nosso site. Crie um repositório em seu github com o código da automação.
 
-Com auxílio do código no repositório do Instituto Joga Junto:
+- A descrição detalhada desta atividade foi fornecida na seção anterior do material do Instituto, que indicava:
 
-Envie o texto em nosso site.
-Crie um repositório em seu github com o código da automação.
+Importe a biblioteca do Selenium, e por meio do seu script, abra o navegador, faça uma pesquisa sobre o instituto joga junto no google, entre no nosso site e mande uma mensagem com o texto:
+
+“ Meu primeiro script de automação - NOME DA SUA SQUAD “
+
+```python
+
+# source pvenv/Scripts/activate
+
+from selenium.webdriver import Firefox
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from time import sleep
+
+navegador = Firefox()
+
+url = "https://www.google.com/"
+
+navegador.get(url)
+
+barra_de_pesquisa = navegador.find_element(By.NAME, "q")
+barra_de_pesquisa.click()
+barra_de_pesquisa.send_keys("Instituto Joga Junto")
+barra_de_pesquisa.send_keys(Keys.RETURN)
+
+sleep(5)
+
+elemento = navegador.find_element(By.XPATH, "//h3[text()='Instituto Joga Junto']")
+elemento.click()
+
+sleep(5)
+
+elemento_contato = navegador.find_element(By.XPATH, "//a[@href='/#Contato']")
+elemento_contato.click()
+
+sleep(5)
+
+elemento_nome = navegador.find_element(By.ID, "nome")
+elemento_nome.send_keys("Leanderson")
+elemento_nome = navegador.find_element(By.ID, "email")
+elemento_nome.send_keys("leanderson.devlima@gmail.com")
+
+elemento_assunto = navegador.find_element(By.ID, "assunto")
+selecionar = Select(elemento_assunto)
+selecionar.select_by_value("Ser facilitador")
+
+elemento_nome = navegador.find_element(By.ID, "mensagem")
+elemento_nome.send_keys("Até seria legal ser facilitador, mas esse é o meu primeiro script de automação - LEANDERSON DA SQUAD 02")
+
+sleep(5)
+
+botao_enviar = navegador.find_element(By.XPATH, "//button[@type='submit']/p[text()='Enviar']")
+botao_enviar.click()
+
+sleep(5)
+
+navegador.quit()
+
+```
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade7.py.
+
 </details>
 
 
@@ -268,7 +327,52 @@ Crie um repositório em seu github com o código da automação.
 
 🔍 Faça em casa e apresente na próxima aula. EM SQUAD Escreva uma automação para acessar o Whatsapp web. Envie uma mensagem para o grupo de estudos do IJJ com a mensagem: Automação do WhatsApp - NOME DO SEU SQUAD.
 
+```python
+from selenium.webdriver import Firefox
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from time import sleep
+import pyautogui
+import time
+import mouse
 
+navegador = Firefox()
+navegador.get("https://web.whatsapp.com/")
 
+input("Faça o login no WhatsApp Web e pressione Enter após a conclusão...")
+
+pyautogui.keyDown('alt')
+pyautogui.press('tab')
+pyautogui.keyUp('alt')
+
+sleep(3)
+
+grupo_nome = "[3] IJJ - BUGOU? QA TÁ ON!"
+campo_pesquisa = navegador.find_element(By.XPATH, "//div[@contenteditable='true']")
+campo_pesquisa.send_keys(grupo_nome)
+
+sleep(3)
+
+resultado_grupo = navegador.find_element(By.XPATH, f"//span[@title='{grupo_nome}']")
+resultado_grupo.click()
+
+sleep(5)
+
+mensagem = "Automacao do WhatsApp - Leanderson - Atividade 8 - Squad02 - TESTE2."
+
+time.sleep(2)
+mouse.move(690, 900, absolute=True, duration=0.1)
+mouse.click('left')
+time.sleep(1)
+
+pyautogui.write(mensagem)
+pyautogui.press('enter')
+
+sleep(5)
+
+navegador.quit()
+
+```
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade8.py.
 
 </details>
